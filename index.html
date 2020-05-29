@@ -1,0 +1,233 @@
+<html>
+	<head>
+
+		<meta charset = "utf-8">
+
+		<!-- CSS File-->
+		<link href="SEG3125 - Lab1.css" rel="stylesheet" type="text/css">
+
+		<title>uoZone Questionnaire</title>
+	</head>
+
+	<body>
+		<br>
+
+		<div class = "center">
+			<div class = "question">
+				<h2>uoZone Website UI Survey</h2>
+			</div>
+		
+		<!-- Link --> 
+
+		<h3>What do you think of the UI in this <a href="https://uozone2.uottawa.ca/apps">uoZone</a> site?</h3>	
+
+		</div>
+
+		<!-- Website Screenshot-->
+		<img src="uOzoneApps.JPG" alt="https://uozone2.uottawa.ca/apps" width="450" height="250">
+
+		<div class = "center">
+		<p><br>Please fill out the following survey to let us know what you think about this site!<br></p>
+		</div>
+
+		<p class="double"></p>
+
+		<!-- Survey -->
+		<form>
+
+			<div class = "center">
+				<h3>Personal Information</h3>
+			</div>
+
+			<div class="question">
+
+			<lable>Name:
+				<input name = "name" type = "text" size = "25"></label>
+
+			<lable>E-mail:
+				<input name = "email" type = "text" size = "25"></label>
+
+			</div>
+
+				<!-- Q1: Radio Buttons-->
+
+				<div class = "center">
+					<h3><p class="double">Question 1</p></h3>
+				</div>
+				
+				<div class="question">
+					<strong> On average, how often do you visit this website?</strong>
+					<p>
+					<input name = "visit" type = "radio" value = "Daily">
+					<label>Every day</label><br>
+
+					<input name = "visit" type = "radio" value = "Often">
+					<label>2-3 Times a Week</label><br>
+
+					<input name = "visit" type = "radio" value = "Weekly">
+					<label>Once a week</label><br>
+
+					<input name = "visit" type = "radio" value = "Rarely">
+					<label>A few times a month</label><br>
+
+					<input name = "visit" type = "radio" value = "Monthly">
+					<label>Once a month</label><br>
+
+					<input name = "visit" type = "radio" value = "Never">
+					<label>Never</label>
+					</p>
+
+				</div>
+
+					<!-- Q2: Radio Buttons -->
+
+					<div class = "center">
+						<h3><p class="double">Question 2</p></h3>
+					</div>
+
+					<div class="question">
+
+					<label><strong>What is your opinion about the organization of information on the screen?</strong></label><br>
+
+					<p>
+					<input name = "year" type = "radio" value = "vConfusing">
+					<label>Very Confusing</label><br>
+
+					<input name = "year" type = "radio" value = "Confusing">
+					<label>A little Confusing</label><br>
+
+					<input name = "year" type = "radio" value = "Clear">
+					<label>A little Clear</label><br>
+
+					<input name = "year" type = "radio" value = "vClear">
+					<label>Very Clear</label><br>
+					</p>
+						
+				</div>
+				<!-- Q3: Checkboxes -->
+
+				<div class = "center">
+					<h3><p class="double">Question 3</p></h3>
+				</div>
+				
+				<div class="question">
+
+					<strong>What feature(s) of this website do you consider essential?</strong><br>
+
+					<p>
+					<input name = "essential" type = "checkbox" value = "List">
+					<label>List</label><br>
+
+					<input name = "essential" type = "checkbox" value = "Favourites">
+					<label>Favourites</label><br>
+
+					<input name = "essential" type = "checkbox" value = "Group">
+					<label>Group</label><br>
+
+					<input name = "essential" type = "checkbox" value = "Search">
+					<label>Search</label><br>
+
+					<input name = "essential" type = "checkbox" value = "Info">
+					<label>More Info</label><br>
+					</p>
+
+				</div>
+
+				<!-- Q4: Strongly Agree/Disagree -->
+
+				<div class = "center">
+					<h3><p class="double">Question 4</p></h3>
+				</div>
+
+				<div class="question">
+
+					<strong>How does the following statement apply to you?</strong><br>
+
+					<div class = "center">
+						<p>"I am able to find this website easy to use"<br></p>
+					</div>
+
+					<p>
+					<div class="slidecontainer">
+  
+						<label for="Strongly Disagree">Strongly Disagree</label>
+						<input type="range" min="1" max="100" value="50" class="slider" id="myRange"> 
+						<div class = "right">
+							<label for="Strongly Agree">Strongly Agree</label>
+						</div>
+					</div>
+					</p>
+
+				</div>
+				
+				<!-- Q5: Text-->
+
+				<div class = "center">
+					<h3><p class="double">Question 5</p></h3>
+				</div>
+
+				<div class="question">
+					
+					<label><strong>How would you describe this website using one or more words?<br></strong></label>
+
+						<div class = "center">
+							<p><input list = "word" name = "word"></p>
+						</div>
+
+				</div>
+
+				<!-- Q6: Yes/No -->
+
+				<div class = "center">
+					<h3><p class="double">Question 6</p></h3>
+				</div>
+
+				<div class="question">
+
+					<strong>Overall, are you satisfied with the usability of this website?</strong>
+					
+					<p>
+					<input name = "yes/no" type = "radio" value = "Yes">
+					<label>Yes</label><br>
+
+					<input name = "yes/no" type = "radio" value = "No">
+					<label>No</label><br>
+					</p>
+					
+				</div>
+				
+				<p class="double"></p>
+				
+				<div class = "center">
+					<h3>Thank you for taking part in this survey!</h3>
+				</div>
+
+				<div class = "optional">
+					<strong>If there is anything else you would like to comment on, please type it in the box below<br><br></strong>
+
+				<!-- Comments -->
+				
+					<label>Additional Comments:<br><br>
+					<div class = "center">
+					<textarea name = "comments" rows = "4" cols = "50">Please enter any additional comments you may have, here</textarea>
+					</label>
+					</div>
+				</div>
+
+				<!-- Submit Survey -->
+	
+				<button id="submitButton" type="button" class="block">
+					<h3>Submit My Survey</h3>
+				</button>
+
+				<div class = "center">
+				<p>
+				<label><br>Have a wonderful day! :)</label>
+				</p>
+				</div>
+
+				<p id="signature"> <br> Site created by Ariane Poserio</p>	
+
+			</form>
+	</body>
+</html>
