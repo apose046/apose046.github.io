@@ -1,0 +1,81 @@
+<html>
+<head>
+	<!-- This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp-->
+	<!-- CSS File-->
+	<link href="styles.css" rel="stylesheet" type="text/css">
+
+	<title>Grocers R Us</title>
+</head>
+
+	<body>
+
+	<!-- Tab links, each one with an onclick event associated with it -->
+	<div class="tab">
+	  <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
+	  <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
+	  <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+	</div>
+
+	<!-- Tab content -->
+
+	<div id="Client" class="tabcontent">
+
+		<div class="center">
+			<h2>Welcome to Grocers R Us!</h2>
+			Please tell us a little bit about yourself so that we may cater to your needs
+		</div>
+
+	  <h3>Client Information<br></h3>
+
+		Which of the following applies to you?:
+		<p>
+			<input id = "Organic" name = "dietSelect" type = "checkbox" value = "Organic" onchange = "populateListProductChoices(this.value, 'displayProduct')" >
+			<label>I am looking for organic options</label><br>
+
+			<input id = "Vegetarian" name = "dietSelect" type = "checkbox" value = "Vegetarian" onchange = "populateListProductChoices(this.value, 'displayProduct')" >
+			<label>I am a vegetarian</label><br>
+
+			<input id = "GlutenFree" name = "dietSelect" type = "checkbox" value = "GlutenFree" onchange = "populateListProductChoices(this.value, 'displayProduct')">
+			<label>I am looking for gluten free products</label><br>
+
+			<input id = "Lactose" name = "dietSelect" type = "checkbox" value = "Lactose" onchange = "populateListProductChoices(this.value, 'displayProduct')">
+			<label>I am lactose intolerant</label><br>
+
+			<input id = "Allergies" name = "dietSelect" type = "checkbox" value = "Allergies" onchange = "populateListProductChoices(this.value, 'displayProduct')">
+			<label>I have peanut allergies</label><br>
+
+			<input id = "None" name = "dietSelect" type = "checkbox" value = "None" onchange = "populateListProductChoices(this.value, 'displayProduct')">
+			<label>None of the above</label>
+
+		</p>
+
+	</div>
+
+
+	<div id="Products" class="tabcontent">
+	  <h3>Here is what we recommend!</h3>
+	  <p>We preselected products for you based on your restrictions</p>
+		 Choose items to buy:<br>
+
+		 <div id="displayProduct"></div>
+		 <br><button id="addCart" type="button" class="block" onclick="selectedItems()">
+			Add selected items to cart.
+		</button>
+	</div>
+
+	<div id="Cart" class="tabcontent">
+	  <h3>Cart</h3>
+	  <p>Here are the items that you selected!</p>
+	  <div id="displayCart"></div>
+
+	 		 <div class = "center">
+	 		 <label><br>Thank you for shopping with <strong>Grocers R Us</strong>! Have a great day! :)</label>
+	 		 </div>
+	</div>
+
+	<script src="groceries.js"></script>
+	<script src="main.js"></script>
+
+		<p id="signature"> <br> Site created by Ariane Poserio</p>
+	</body>
+</html>
