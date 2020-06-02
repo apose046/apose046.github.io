@@ -1,0 +1,52 @@
+<html>
+  <head>
+
+    <meta charset = "utf-8">
+
+    <title>Square Animation</title>
+
+    <style> 
+
+      div.square {
+        width: 100px;
+        height: 100px;
+        background: mediumspringgreen;
+        position: relative;
+        animation: animation 5s infinite;
+        margin: auto;
+      }
+
+      @keyframes animation {
+        0%   {background: mediumspringgreen; left: 0px; top: 0px;}
+        25%  {background: lightskyblue; left: 250px; top: 0px;}
+        50%  {background: lightsalmon; left: 250px; top: 250px;}
+        75%  {background: lemonchiffon; left: 0px; top: 250px;}
+        100% {background: mediumspringgreen; left: 0px; top: 0px;}
+      }
+
+      div.center{
+        text-align: center;
+      }
+
+      body {
+        background-color: ghostwhite;
+        width: 600px;
+        border: 2px solid black;
+        padding: 0px 20px 20px 20px;
+        margin: auto;
+      }
+
+    </style>
+
+  </head>
+  <body>
+
+    <div class="center">
+      <h2>Continuous Square Animation</h2><br>
+    </div>
+
+      <div class ="square"></div>
+
+  </body>
+</html>
+
