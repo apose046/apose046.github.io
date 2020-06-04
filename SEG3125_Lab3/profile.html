@@ -1,0 +1,56 @@
+<html>
+<head>
+	<!-- This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp-->
+	<!-- CSS File-->
+	<link href="styles.css" rel="stylesheet" type="text/css">
+
+	<title>Grocers R Us</title>
+</head>
+
+	<body>
+
+		<div class = "center">
+		<h2>Welcome to Grocers R Us</h2>
+		</div>
+
+		<nav>
+			<ul class="breadcrumb">
+			  <li>My Information</li>
+			</ul>
+		</nav>
+
+		<div class="center">
+			Please tell us a little bit about yourself so that we may cater to your needs
+		</div>
+
+	  <h3>Client Information<br></h3>
+
+		Which of the following applies to you?:
+		<p>
+			<input id = "Organic" name = "dietSelect" type = "checkbox" value = "Organic" onchange = "populateListProductChoices(this.value, 'displayProduct')" >
+			<label>I am looking for organic options</label><br>
+
+			<input id = "Vegetarian" name = "dietSelect" type = "checkbox" value = "Vegetarian" onchange = "populateListProductChoices(this.value, 'displayProduct')" >
+			<label>I am a vegetarian</label><br>
+
+			<input id = "GlutenFree" name = "dietSelect" type = "checkbox" value = "GlutenFree" onchange = "populateListProductChoices(this.value, 'displayProduct')">
+			<label>I am looking for gluten free products</label><br>
+
+			<input id = "Lactose" name = "dietSelect" type = "checkbox" value = "Lactose" onchange = "populateListProductChoices(this.value, 'displayProduct')">
+			<label>I am lactose intolerant</label><br>
+
+			<input id = "Allergies" name = "dietSelect" type = "checkbox" value = "Allergies" onchange = "populateListProductChoices(this.value, 'displayProduct')">
+			<label>I have peanut allergies</label><br>
+
+			<input id = "None" name = "dietSelect" type = "checkbox" value = "None" onchange = "populateListProductChoices(this.value, 'displayProduct')">
+			<label>None of the above</label>
+
+		</p>
+
+		<a href="produce.html" class="button">Click me!</a>
+
+	<script src="groceries.js"></script>
+	<script src="main.js"></script>
+
+</body>
+</html>
