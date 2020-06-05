@@ -88,7 +88,7 @@ function populateListProductChoices(slct1, slct2) {
   		document.getElementById("Lactose").checked = false;
   		document.getElementById("Allergies").checked = false;
   		document.getElementById("None").checked = false;
-  		alert("You have chosen that you both posses and do not posses dietary limitations. Please reselect your options so that we may better cater to your dietary needs :)");
+  		alert("You have chosen that you both have and do not have dietary limitations. Please reselect your options so that we may better cater to your dietary needs :)");
   		location.reload();
   	}
 
