@@ -1,0 +1,670 @@
+<!-- This file contains many elements adapted from the online tutoral -->
+<!-- on Bootstrap 4 as found here: https://www.w3schools.com/bootstrap4/default.asp -->
+
+<!-- Images source: -->
+<!-- jule.jpg taken from https://www.freepik.com/premium-vector/cartoon-successful-hairdresser_3951066.htm -->
+<!-- Erwind.jpb https://www.kijiji.ca/v-construction-trades-jobs/winnipeg/bicycle-mechanic/1499188319 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- The head should contain an appropriate title for your site -->
+<head>
+    <title>Shampoodle!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+
+    <!-- Your own additional style sheet -->
+    <link href="styles.css" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+    <!-- Medium size container, padding 3, margins 3, background dark, text is white -->
+    <!-- Should show the name of your company with an image or logo -->
+    <!-- Bootstrap has its own font for H1, H2, p, etc.  -->
+    <!-- Look in BS4 Typography https://www.w3schools.com/bootstrap4/bootstrap_typography.asp -->
+    <!-- Use your own CSS file to change those fonts if they do not correspond to your company's look -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand font2" href="#">Shampoodle!</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-info" href="#jumpToAbout">About Us<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-info" href="#jumpToServices">Services<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-info" href="#jumpToStaff">Our Staff<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-info" href="#jumpToBook">Book Now!<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-md p-3 my-3 border bg-info text-white">
+        <div class="center">
+            <div class="font">
+              Shampoodle!
+            </div>
+            <p><br>Let us style your hair, so your pillow doesn't have to!</p>
+
+        </div>
+    </div>
+    <!-- Bootstrap has components for alerts: https://www.w3schools.com/bootstrap4/bootstrap_alerts.asp  -->
+    <!-- These can be useful for making sure someone reads something before continuing -->
+    <div class="container">
+        <div class="alert alert-danger alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Please note that due to COVID-19 we will remain closed until further notice. Thank you for your understanding</strong>
+        </div>
+    </div>
+
+    <!-- Bootstrap contains a grid system you can explore https://www.w3schools.com/bootstrap4/bootstrap_grid_system.asp -->
+    <!-- It can be useful for placement of information -->
+
+    <!--
+    <div class="row p-3 center">
+        <div class="col-sm-3 pl-3"><a href="#jumpToAbout" class="text-info">About Us</a></div>
+        <div class="col-sm-3"><a href="#jumpToServices" class="text-info">Services</a></div>
+        <div class="col-sm-3"><a href="#jumpToStaff" class="text-info">Staff</a></div>
+        <div class="col-sm-3"><a href="#jumpToBook" class="text-info">Book Now!</a></div>
+    </div>-->
+
+    <!-- When you have messages to tell, remember that center align is not always the best choice -->
+
+    <div id="jumpToAbout" class="block">
+        <br>
+    </div>
+    <div class="container-md p-3 my-3 border bg-light text-success">
+        <div class="row">
+                <div class="col-sm">
+                    <h3>About Shampoodle</h3><br>
+                    <p>
+                        Shampoodle is a full service men and women's hair salon located in downtown Ottawa.
+                        <br><br> Our professional team is savvy with all the latest styles and trends to provide our customers with their best look. We specialize in classic updos perfect for formal events, single-process colour, highlighting, and perms. Stop by to schedule a consultation or book online today!
+                        <br><br>We strive for the highest quality of service, while maintaining a fun, friendly, and welcoming environment! 
+                    </p>
+                </div>
+                <div class="col-sm">
+                    <br><br>
+                    <img class="card-img-top" src="Salon.JPG" alt="Card image" style="width:90%">
+                </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+            <br>
+            <h3>Store Hours</h3>
+                <table class="table table-info table-hover">
+                                <thead>
+                                <tr>
+                                    <th>Day</th>
+                                    <th>Time</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Monday</strong>
+                                        </td>
+                                        <td>9:00 AM - 5:00 PM
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Tuesday</strong>
+                                        </td>
+                                        <td>9:00 AM - 5:00 PM
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Wednesday</strong>
+                                        </td>
+                                        <td>9:00 AM - 5:00 PM
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Thursday</strong>
+                                        </td>
+                                        <td>9:00 AM - 5:00 PM
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Friday</strong>
+                                        </td>
+                                        <td>9:00 AM - 5:00 PM
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Saturday</strong>
+                                        </td>
+                                        <td>11:00 AM - 4:00 PM
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Sunday</strong>
+                                        </td>
+                                        <td>Closed
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="center">
+                                <strong>If you require an appointment outside of our regular hours, please contact us and we will do our best to accommodate your schedule!</strong>
+
+                                <br><br>For any inquiries, please contact us at:
+                                <br>Email: shampoodle@newleaf.com
+                                <br>Phone: 613-235-1984
+                                <br>Address: 123 Tortimer Avenue
+                            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap has different types of tables https://www.w3schools.com/bootstrap4/bootstrap_tables.asp -->
+    <!-- Might be (or not) useful to show some information to the user -->
+    <div id="jumpToServices" class="block">
+        <br>
+    </div>
+    <div class="container">
+        <h2>Our Services and Pricing</h2>
+        <p>Here are a list of services we can provide for you</p>            
+            <div id="accordion">
+                <div class="card bg-info">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseCut" style="color:white">Haircuts and Styles</a>
+                    </div>
+                    <div id="collapseCut" class="collapse show" data-parent="#accordion">
+                        <div class="card-body bg-white">
+                            <p>At Shampoodle, our staff are friendly and skilled. On an annual basis, we brush up our skills by doing courses that are made available in the Ottawa area. You can be sure that we are always on top of the most recent hair trends. We look forward to providing you and your family with exceptional hair salon services at reasonable prices.</p>
+
+                            <table class="table table-info table-hover">
+                                <thead>
+                                <tr>
+                                    <th>Services</th>
+                                    <th>Prices</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Wash and Style</strong>
+                                            <ul>
+                                                <li>Short Hair (above the ears)</li>
+                                                <li>Medium Hair (up to shoulders)</li>
+                                                <li>Long Length (past the shoulders)</li>
+                                            </ul>
+                                        </td>
+                                        <td><br>$27+
+                                            <br>$29+
+                                            <br>$33+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Haircuts (based off current hair length)</strong>
+                                            <ul>
+                                                <li>Short Hair (pixie/barber)</li>
+                                                <li>Mid Length (up to shoulders)</li>
+                                                <li>Long Hair (mid back and onwards)</li>
+                                            </ul>
+                                        </td>
+                                        <td><br>$22+
+                                            <br>$27+
+                                            <br>$32+
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-info">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseColor" style="color:white">Dying for Hair Colour</a>
+                    </div>
+                    <div id="collapseColor" class="collapse" data-parent="#accordion">
+                        <div class="card-body bg-white">
+                            <p>Below is the pricing for all of our colour services. If you are unsure what service you need, you may consult with your stylist. A partial highlight covers foils along your part line, half head highlights cover from above the ears and up, and full highlights cover the entire head. Your personal maintenance will depend on what service you require and can be discussed with your stylist.</p>
+
+                            <table class="table table-info table-hover">
+                                <thead>
+                                <tr>
+                                    <th>Services</th>
+                                    <th>Prices</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Full Colour</strong>
+                                            <br><br>With Blowout
+                                            <ul>
+                                                <li>Short Hair</li>
+                                                <li>Long Hair</li>
+                                            </ul>
+                                            With Cut and Blowout
+                                            <ul>
+                                                <li>Short Hair</li>
+                                                <li>Long Hair</li>
+                                            </ul>
+                                        </td>
+                                        <td><br><br><br>$56+
+                                            <br>$69+
+                                            <br><br>$68+
+                                            <br>$87+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Creative Colour</strong>
+                                            <br>What is Creative Colour? This is anything that is outside the normal all over base colour or highlights. You’ve heard of some of these terms: Ombre, Sombre, Colour Melting, Dip Dye, vibrant, pastels and more. In these cases, we will consult with each individual client to determine which creative colour technique they need for their desired look. Creative colours involve multiple steps to achieve these looks and can take an unpredictable amount of time. Some may only take an hour before cutting and styling and some may take 2-3 hours. Consultation is key in helping us understand what look you are after.
+                                            <br><br>Cutting and styling costs extra based on your hair length
+                                        </td>
+                                        <td><br>$65+ per hour</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Corrective Colour</strong>
+                                            <br>Anytime you want to go from a dark base shade to a lighter base shade all over, this is considered a colour correction. We would consider this a corrective colour because it can be unpredictable as to how many steps we may need to take you to the shade that you desire. This process may also result in more than one visit to the salon to keep the integrity of your hair in mind. Corrective colours can be as little as a 1.5-2hour process or can be upwards of 3-4 hours.
+                                            <br><br>Cutting and styling costs extra based on your hair length
+                                        </td>
+                                        <td><br>$60+ per hour</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-info">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseEvents" style="color:white">Formal Events</a>
+                    </div>
+                    <div id="collapseEvents" class="collapse" data-parent="#accordion">
+                        <div class="card-body bg-white">
+                            <p>If you have a formal event – big or small, we have the perfect team that can pull it all together. From vintage to classic to intricate artistic detail, our stylists will make your vision a reality. We also offer flawless make-up application from our talented Make-Up artists who will perfectly compliment your desired look!</p>
+
+                            <table class="table table-info table-hover">
+                                <thead>
+                                <tr>
+                                    <th>Services</th>
+                                    <th>Prices</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Up Do</strong>
+                                            <br>Updo prices will vary depending on hair length, thickness and how detailed the design is. For best results, wash your hair the day prior to your event.
+                                        </td>
+                                        <td><br>$90</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Curls</strong>
+                                            <ul>
+                                                <li>Short Hair</li>
+                                                <li>Shoulder Length</li>
+                                                <li>Medium Length</li>
+                                                <li>Long Hair</li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <br>$35
+                                            <br>$45
+                                            <br>$55
+                                            <br>$65</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Pure Anada Mineral Make-Up Application</strong>
+                                            <br>We use Pure Anada for all of our make-up applications. Pure Anada is an all natural mineral make-up made in Canada. It provides a flawless finish while still allowing your skin to breathe. Skin should be clean and moisturized prior to make-up application.
+                                        </td>
+                                        <td><br>$70
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <!-- Presenting the staff with cards: https://www.w3schools.com/bootstrap4/bootstrap_cards.asp -->
+    <!-- Card columns allows multiple cards next to each other -->
+    <!-- The first card's button doesn't go anywhere, it could be a modal --> 
+    <!-- My second card limits the information seen and uses collapsible to show more -->
+    <div id ="jumpToStaff" class="block">
+        <br>
+    </div>
+    <div class="container">
+        <h2>Meet our Hairdressers!</h2>
+        <br>
+        <div class="card-columns" style="padding-left: 175px" style="width: 700">
+            <div class="card bg-danger" style="width:200px">
+                <img class="card-img-top" src="Beau.png" alt="Card image" style="height:200px">
+                <div class="card-body">
+                    <h4 class="card-title font2 center">Meet Beau</h4>
+                    <p class="card-text">Beau has a fresh approach to hairstyling and is fun and easygoing who specializes in kid's cuts.</p>
+
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#Beau">View Profile</button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="Beau" role="dialog">
+                        <div class="modal-dialog">  
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <img class="card-img-center center2" src="Beau.png" alt="Card image" style="width:30%">
+                                            <div class="font2">
+                                                <h2>About Beau</h2>
+                                            </div>
+                                            <p>Beau is our newest member to the Shampoodle Stylist Team!
+                                            <br><br>"I've always wanted to be a Hairstylist for as long as I can remember" he says.
+                                            <br><br>When Beau was a child getting his hair cut, he remembers thinking how cool he thought hairstyling was and that he wanted to do it. This dream pushed him to persue this creative career. The more he learned, the more his passion grew.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                             
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>     
+                    </div>   
+                </div>
+            </div>
+                    <!--
+                    <a href="#Beau" class="btn btn-info" data-toggle="collapse">See Profile</a>
+                    <div id="Beau" class="collapse p-3">
+                        <p>Jules has been cutting hair for 10 years ... </p>
+                    </div>
+                </div>-->
+            </div>
+            <div class="card bg-danger" style="width:200px">
+                <img class="card-img-top" src="Diana.JPG" alt="Card image" style="height:200px">
+                <div class="card-body">
+                    <h4 class="card-title font2 center">Meet Diana</h4>
+                    <p class="card-text">Diana is a technical stylist whose inspiration comes from strong shapes and feminine lines.<br><br></p>
+                    
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#Diana">View Profile</button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="Diana" role="dialog">
+                        <div class="modal-dialog">  
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <img class="card-img-center center2" src="Diana.jpg" alt="Card image" style="width:30%">
+                                            <div class="font2">
+                                                <h2>About Diana</h2>
+                                            </div>
+                                            <p>Diana attends many of the top hairshows every year. Attendance at these amazing shows allows her to meet some of the top names in hairstylists today. It also allows her to sample the many different techniques these stylists bring to the world of hair.
+                                            <br><br>Diana is a technical stylist with influence that comes from strong shapes. "I like hair that flows, that is feminine and I cut hair to be very versatile. It's a joy to be a part of clients' lives and to know that you have a hand in helping them feel and look their best!"</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                             
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>     
+                    </div>   
+                </div>
+            </div>
+            </div>
+            <div class="card bg-danger" style="width:200px">
+                <img class="card-img-top" src="Raymond.jpg" alt="Card image" style="height:200px">
+                <div class="card-body">
+                    <h4 class="card-title font2 center">Meet Raymond</h4>
+                    <p class="card-text">Raymond is a creative stylist who loves to try new techniques for cuts & colours with his clients.<br><br></p>
+                    
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#Raymond">View Profile</button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="Raymond" role="dialog">
+                        <div class="modal-dialog">  
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <img class="card-img-center center2" src="Raymond.jpg" alt="Card image" style="width:30%">
+                                            <div class="font2">
+                                                <h2>About Raymond</h2>
+                                            </div>
+                                            <p>I love what I do, I don't call it a job, I call it a Wonderful Life. Not many can say that, but I'm proud I do.
+                                            <br><br>I spend my days creating art, making people feel good and darn it, looking great.
+                                            <br><br>Thanks so much to everyone who I rely on every day/week for ongoing advice and inspiration, and to all my wonderful clients and Shampoodle Family!
+                                            <br><br>Without you, there would not be ME.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                             
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>     
+                    </div>   
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="jumpToBook" class="block">
+        <br>
+    </div>
+    <div class="container p-3">
+        <h2>Book my Appointment</h2>
+        <br>
+        <div id="accordion2">
+                <div class="card bg-info">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseBook" style="color:white">Request a New Appointment</a>
+                    </div>
+                    <div id="collapseBook" class="collapse show" data-parent="#accordion2">
+                <div class="card-body bg-white">
+                
+                <div class="center">
+                    <strong>Please fill out the following to request a new appointment</strong>
+                </div>
+
+                <form>
+                <br>
+                <table class="table table-info table-hover">
+                                <tbody>
+                                    <tr>
+                                        <td style="text-align: center">
+                                            <label>Full Name:
+                                            <input name = "name" type = "text"></label>
+                                        </td>
+                                        <td style="text-align: center">
+                                            <label>E-mail:
+                                            <input name = "email" type = "text"></label>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                <div class="card-body">
+
+                    <label>Please select what date and time you'd like to schedule your appointment</label><br>
+
+                    <table class="table table-info table-hover">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                    <div class="form-group row">
+                            <label for="dateTimeInput" class="col-2 col-form-label">Date and time</label>
+                            <div class="col-10">
+                                <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="dateTimeInput">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+                        What type of hair do you have?
+                        <table class="table table-info table-hover">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input name = "length" type = "radio" value="Short">
+                                            <label>Short Hair (above the ears)</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input name = "length" type = "radio" value="Medium">
+                                            <label>Medium Length Hair (up to my shoulders)</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input name = "length" type = "radio" value="Long">
+                                            <label>Long Hair (past my shoulders)</label>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+
+                        What type of service would you like?<br>
+                       
+                            <table class="table table-info table-hover">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <strong>Haircut and Style</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input name="Wash" type = "checkbox" value="Wash">
+                                            <label>Wash and Style</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input name="Wash" type = "checkbox" value="Cut">
+                                            <label>Haircut</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>Dying for Hair Colour</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input name="Colour" type = "radio" value="CC">
+                                            <label>Full Color with Blowout</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input name="Colour" type = "radio" value="CCB">
+                                            <label>Full Color With Cut and Blowout</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input name="Colour" type = "radio" value="Creative">
+                                            <label>Creative Colour</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input name="Colour" type = "radio" value="Corrective">
+                                            <label>Corrective Colour</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>Formal Events</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input name="Formal" type = "checkbox" value="Updo">
+                                            <label>Up do</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input name="Formal" type = "checkbox" value="Curls">
+                                            <label>Curls</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input name="Formal" type = "checkbox" value="Makeup">
+                                            <label>Pure Anada Mineral Make-Up Application</label>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class = "center">
+                            <label>Additional Comments:<br><br>
+                            
+                            <textarea name = "comments" rows = "4" cols = "50">Please enter any additional comments you may have, here!</textarea>
+                            </label>
+                            </div>
+                            </div>
+
+                            <!-- Submit Survey -->
+
+                            <div class="center">
+                            <button type="button" class="btn btn-info btn-lg">Schedule My Appointment!</button>
+                            </div>
+
+                            <div class = "center">
+                            <p>
+                            <label><br>Thank you for booking an appointment with Shampoodle! Have a wonderful day! :)</label>
+                            </p>
+                            </div>
+                        </div>
+                    </p>
+            </div>
+        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
