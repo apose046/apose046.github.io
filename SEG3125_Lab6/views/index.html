@@ -1,0 +1,223 @@
+<html>
+	<head>
+
+		<meta charset = "utf-8">
+
+		<!-- CSS File-->
+		<
+		<link href="/assets/styles.css" rel="stylesheet" type="text/css">
+
+		  <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    	<!--\<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>-->    
+
+   	<!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>-->
+   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+		<title>uoZone Questionnaire</title>
+	</head>
+
+	<body>
+		<br>
+
+		<div class = "center">
+			<div class = "question">
+				<h2>uoZone Website UI Survey</h2>
+			</div>
+		
+		<!-- Link --> 
+
+		<h3>What do you think of the UI in this <a href="https://uozone2.uottawa.ca/apps">uoZone</a> site?</h3>	
+
+		</div>
+
+		<!-- Website Screenshot-->
+		<img src="/assets/uOzoneApps.JPG" alt="https://uozone2.uottawa.ca/apps" width="450" height="250">
+
+		<div class = "center">
+		<p><br>Please fill out the following survey to let us know what you think about this site!<br></p>
+		</div>
+
+		<p class="double"></p>
+
+		<div id="survey">
+		<!-- Survey -->
+		<form>
+
+				<!-- Q1: Radio Buttons-->
+
+				<div class = "center">
+					<h3><p class="double">Question 1</p></h3>
+				</div>
+				
+				<div class="question">
+					<strong> On average, how often do you visit this website?</strong>
+					<p>
+					<input name = "Q1" type = "radio" value = "Every day">
+					<label>Every day</label><br>
+
+					<input name = "Q1" type = "radio" value = "2-3 Times a Week">
+					<label>2-3 Times a Week</label><br>
+
+					<input name = "Q1" type = "radio" value = "Once a week">
+					<label>Once a week</label><br>
+
+					<input name = "Q1" type = "radio" value = " A few times a month">
+					<label>A few times a month</label><br>
+
+					<input name = "Q1" type = "radio" value = "Once a month">
+					<label>Once a month</label><br>
+
+					<input name = "Q1" type = "radio" value = "Never">
+					<label>Never</label>
+					</p>
+
+				</div>
+
+					<!-- Q2: Radio Buttons -->
+
+					<div class = "center">
+						<h3><p class="double">Question 2</p></h3>
+					</div>
+
+					<div class="question">
+
+					<label><strong>What is your opinion about the organization of information on the screen?</strong></label><br>
+
+					<p>
+					<input name = "Q2" type = "radio" value = "Very Confusing">
+					<label>Very Confusing</label><br>
+
+					<input name = "Q2" type = "radio" value = "A little Confusing">
+					<label>A little Confusing</label><br>
+
+					<input name = "Q2" type = "radio" value = "A little Clear">
+					<label>A little Clear</label><br>
+
+					<input name = "Q2" type = "radio" value = "Very Clear">
+					<label>Very Clear</label><br>
+					</p>
+						
+				</div>
+				<!-- Q3: Checkboxes -->
+
+				<div class = "center">
+					<h3><p class="double">Question 3</p></h3>
+				</div>
+				
+				<div class="question">
+
+					<strong>What feature(s) of this website do you consider essential?</strong><br>
+
+					<p>
+					<input name = "Q3" type = "checkbox" value = "List">
+					<label>List</label><br>
+
+					<input name = "Q3" type = "checkbox" value = "Favourites">
+					<label>Favourites</label><br>
+
+					<input name = "Q3" type = "checkbox" value = "Group">
+					<label>Group</label><br>
+
+					<input name = "Q3" type = "checkbox" value = "Search">
+					<label>Search</label><br>
+
+					<input name = "Q3" type = "checkbox" value = "Info">
+					<label>More Info</label><br>
+					</p>
+
+				</div>
+
+				<!-- Q4: Strongly Agree/Disagree -->
+
+				<div class = "center">
+					<h3><p class="double">Question 4</p></h3>
+				</div>
+
+				<div class="question">
+
+					<strong>How does the following statement apply to you?</strong><br>
+
+					<div class = "center">
+						<p>"I am able to find this website easy to use"<br></p>
+
+						<p>
+							<select name="Q4">
+					  			<option value="Strongly Disagree">Strongly Disagree</option>
+					  			<option value="Disagree">Disagree</option>
+					 			<option value="Neutral" selected="selected">Neutral</option>
+					 			<option value="Agree">Agree</option>
+					 			<option value="Strongly Agree">Strongly Agree</option>
+	     	 				</select>
+	     	 			</p>
+	     	 		</div>
+					
+					</div>
+
+				</div>
+				
+				<!-- Q5: Text-->
+
+				<div class = "center">
+					<h3><p class="double">Question 5</p></h3>
+				</div>
+
+				<div class="question">
+					
+					<label><strong>How would you describe this website using one or more words?<br></strong></label>
+
+						<div class = "center">
+							<p><input list = "word" name = "Q5" placeholder="description..." required /></p>
+						</div>
+
+				</div>
+
+				<!-- Q6: Yes/No -->
+
+				<div class = "center">
+					<h3><p class="double">Question 6</p></h3>
+				</div>
+
+				<div class="question">
+
+					<strong>Overall, are you satisfied with the usability of this website?</strong>
+					
+					<p>
+					<input name = "Q6" type = "radio" value = "Yes">
+					<label>Yes</label><br>
+
+					<input name = "Q6" type = "radio" value = "No">
+					<label>No</label><br>
+					</p>
+					
+				</div>
+				
+				<p class="double"></p>
+				
+				<div class = "center">
+					<h3>Thank you for taking part in this survey!</h3>
+				</div>
+
+				<!-- Submit Survey -->
+	
+				<button id="bb" type="submit" class="block">
+					<h3>Submit My Survey</h3>
+				</button>
+
+				<div class = "center">
+				<p>
+				<label><br>Have a wonderful day! :)</label>
+				</p>
+				</div>
+
+				<p id="signature"> <br> Site created by Ariane Poserio</p>	
+
+			</form>
+
+		<script src="/assets/action.js"></script>
+	</body>
+
+</html>
