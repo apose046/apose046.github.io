@@ -8,14 +8,14 @@
 		<link href="/assets/styles.css" rel="stylesheet" type="text/css">
 
 		  <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
-    	<!--\<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    	<link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet'>
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>-->    
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
 
    	<!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>-->
-   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   script>
 
 		<title>uoZone Questionnaire</title>
 	</head>
@@ -23,14 +23,14 @@
 	<body>
 		<br>
 
-		<div class = "center">
+	<div class="container-md p-3 my-3 border text-white center" id="survey">
 			<div class = "question">
 				<h2>uoZone Website UI Survey</h2>
 			</div>
 		
 		<!-- Link --> 
 
-		<h3>What do you think of the UI in this <a href="https://uozone2.uottawa.ca/apps">uoZone</a> site?</h3>	
+		<label>What do you think of the UI in this <a href="https://uozone2.uottawa.ca/apps">uoZone</a> site?</label>	
 
 		</div>
 
@@ -198,14 +198,16 @@
 				<p class="double"></p>
 				
 				<div class = "center">
-					<h3>Thank you for taking part in this survey!</h3>
+					<h4>Thank you for taking part in this survey!</h4>
 				</div>
 
 				<!-- Submit Survey -->
 	
-				<button id="bb" type="submit" class="block">
-					<h3>Submit My Survey</h3>
-				</button>
+				<div class="center">
+					<button id="bb" type="submit" class="btn-lg btn-light">
+						<h4>Submit My Survey</h4>
+					</button>
+				</div>
 
 				<div class = "center">
 				<p>
@@ -216,6 +218,7 @@
 				<p id="signature"> <br> Site created by Ariane Poserio</p>	
 
 			</form>
+		</div>
 
 		<script src="/assets/action.js"></script>
 	</body>
