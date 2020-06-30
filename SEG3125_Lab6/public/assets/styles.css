@@ -7,23 +7,26 @@ html {
 }
  
 body {
+  font-family: "Times New Roman", Times, serif!important;
   background-color: ghostwhite;
-  width: 600px;
+  width: 50%
   border: 2px solid black;
   padding: 0px 20px 20px 20px;
-  margin: auto;
 }
 
 
-/*
-h1 {
-	font-size: 60px;
+h3{
+  color: black;
+	font-size: 200px;
 	text-align: center;
 	margin: 0;
 	padding: 20px 0;
-	color: #ff00ff;  /* Fuchsia 
-	text-shadow: 3px 3px 1px black;
-}*/
+	font: 400 100px/0.8 'Cookie', Helvetica, sans-serif;
+}
+
+label {
+  color: black;
+}
 
 img {
   display: block;
@@ -111,4 +114,10 @@ table {
   color: mediumpurple;
   font-style: italic;
   font-size: 75%;
+}
+
+.btn-light{
+  background-color:lavender!important;
+  background:3px 3px 1px black;
+  
 }
